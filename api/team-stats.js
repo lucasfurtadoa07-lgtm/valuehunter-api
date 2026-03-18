@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
 
   const { teamId, tournamentId, seasonId } = req.query;
-  if (!teamId || !tournamentId || !seasonId) return res.status(400).json({ error: 'Parâmetros obrigatórios: teamId, tournamentId, seasonId' });
+  if (!teamId || !tournamentId || !seasonId) return res.status(400).json({ error: 'Missing params' });
 
   const url = `https://api.sofascore.com/api/v1/team/${teamId}/unique-tournament/${tournamentId}/season/${seasonId}/statistics/overall`;
 
