@@ -1,0 +1,6 @@
+{
+  "name": "valuehunter-api",
+  "version": "1.0.0",
+  "description": "Proxy API para SofaScore stats",
+  "main": "index.js"
+}
